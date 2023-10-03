@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private GameOverHandler _gameOverHandler;
+    
     public void Crush()
     {
         gameObject.SetActive(false);
-        SceneManager.LoadScene(2);
+        _gameOverHandler.EndGame();
     }
 }
