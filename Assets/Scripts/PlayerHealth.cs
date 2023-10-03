@@ -8,6 +8,6 @@ public class PlayerHealth : MonoBehaviour
     public void Crush()
     {
         gameObject.SetActive(false);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 }
