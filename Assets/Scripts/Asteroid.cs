@@ -12,4 +12,10 @@ public class Asteroid : MonoBehaviour
         
         playerHealth.Crush();
     }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }
