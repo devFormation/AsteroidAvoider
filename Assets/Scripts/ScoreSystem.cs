@@ -18,8 +18,6 @@ public class ScoreSystem : MonoBehaviour
         _score += Time.deltaTime *_scoreMultiplier;
 
         _scoreText.text = Mathf.FloorToInt(_score).ToString();
-
-
     }
 
     public int EndTimer()
